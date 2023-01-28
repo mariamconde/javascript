@@ -181,7 +181,6 @@ var myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
 console.log(myStr);
 
-
 // CONSTRUCTING STRINGS WITH VARIABLES
 var siteName = "freecodecamp";
 var ourStr = "Hello, our name is " + siteName + ", how are you?";
@@ -271,5 +270,53 @@ var myArray = ["Mariam", 21];
 
 // NESTED ARRAYS
 var ourArray = [["the universe", 42], ["everything", 101010]];
-console.log(ourArray[1] ); // the eve
+console.log(ourArray[0]); // ["the universe", 42]
+console.log(ourArray[1]); // ["everything", 101010]
 var myArray = [["Bulls", 23], ["White Sox", 45]];
+
+var ourArray = [50, 60, 70];
+var ourData = ourArray[0]; // equals 50
+
+var myArray = [50, 60, 70];
+var myData = myArray[0]; // equals 50
+console.log(myData);
+
+// MODIFY ARRAY DATA WITH INDEXES
+var ourArray = [18, 64, 99];
+ourArray[1] = 45;
+
+var myArray = [18, 64, 99];
+myArray[0] = 45;
+console.log(myArray); // [45, 64, 99]
+
+// ACCESS MULTI-DIMENSIONAL ARRAYS WITH INDEXES
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
+
+var myData = myArray[2][1]; //8
+console.log(myData);
+
+// MANIPULATE ARRAYS WITH PUSH()
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]); // add an element to the end
+console.log(myArray); // [["John", 23], ["cat", 2], ["dog", 3]]
+
+// MANIPULATE ARRAYS WITH POP()
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop(); // removes the last element
+console.log(myArray); // [["John", 23]]
+
+// MANIPULATE ARRAYS WITH SHIFT()
+var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift(); // removes the first element
+console.log(myArray); // [["dog", 3]]
+
+// MANIPULATE ARRAYS WITH UNSHIFT()
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift(); // removes the first element
+console.log(myArray); // [["dog", 3]]
+myArray.unshift(["Paul", 35]);
+console.log(myArray); // [["Paul", 35], ["dog", 3]]
+
+// SHOPPING LIST
+var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs", 12]]; // arrays of arrays
+
