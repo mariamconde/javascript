@@ -314,7 +314,7 @@ console.log(myArray); // [["dog", 3]]
 var myArray = [["John", 23], ["dog", 3]];
 myArray.shift(); // removes the first element
 console.log(myArray); // [["dog", 3]]
-myArray.unshift(["Paul", 35]);
+myArray.unshift(["Paul", 35]); // adds the element to the front
 console.log(myArray); // [["Paul", 35], ["dog", 3]]
 
 // SHOPPING LIST
